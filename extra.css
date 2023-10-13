@@ -29,6 +29,7 @@
 }
 .md-typeset .admonition.note > p::before {
   color: #307fe2;
+  font-weight: 600;
   content: 'Note: ';
 }
 
