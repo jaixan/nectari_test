@@ -27,7 +27,7 @@
   -webkit-transform: none;
   transform: none;
 }
-.md-typeset .admonition.note > p::before {
+.md-typeset .admonition.note > p:nth-of-type(2)::before {
   color: #307fe2;
   font-weight: 600;
   content: 'Note: ';
