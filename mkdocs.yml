@@ -1,0 +1,61 @@
+site_name: Sage Enterprise Intelligence
+site_author: Karine Brière
+
+theme:
+  palette:
+    primary: custom
+  font:
+    text: Poppins
+  name: material
+  language: en
+  logo: assets/sei-favicon_1.png
+  icon:
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+
+plugins:
+  - search
+  - glightbox
+
+extra_css:
+  - extra.css
+
+extra:
+  generator: false
+
+nav:
+  - 'Web Interface':
+      - 'Workbooks':
+          - 'Customizing a Workbook': 'index.md'
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+docs_dir: 'wiki'
+site_dir: 'www'
+use_directory_urls: True

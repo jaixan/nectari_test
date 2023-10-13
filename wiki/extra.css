@@ -1,0 +1,76 @@
+:root {
+  --md-primary-fg-color: #307fe2;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-width: 1px;
+  border-radius: 6px;
+  padding-bottom: 0px;
+  padding-left: 40px;
+  padding-right: 10px;
+  padding-top: 0px;
+}
+
+.md-grid {
+  max-width: 100%; /* or 100%, if you want to stretch to full-width */
+}
+.md-main__inner {
+  max-width: none;
+}
+.md-sidebar--primary {
+  left: 0;
+}
+.md-sidebar--secondary {
+  right: 0;
+  margin-left: 0;
+  -webkit-transform: none;
+  transform: none;
+}
+.md-typeset .admonition.note > p::before {
+  color: #307fe2;
+  content: 'Note: ';
+}
+
+.md-typeset .admonition.note > .admonition-title {
+  display: none;
+  background-color: #ffffff !important;
+}
+
+.md-typeset .admonition.example > .admonition-title {
+  display: block;
+  color: #00a385;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #ffffff;
+  width: 30%;
+  padding-right: 10px;
+}
+.md-typeset .admonition-title::before,
+.md-typeset summary::before {
+  display: none;
+}
+
+.md-typeset h1 {
+  font-size: 40px;
+  color: black;
+}
+
+.md-typeset p {
+  font-size: 14px;
+  color: black;
+}
+
+.md-typeset .admonition.example,
+.md-typeset details.example {
+  border-color: rgb(43, 155, 70);
+}
+.md-typeset .example > .admonition-title,
+.md-typeset .example > summary {
+  background-color: rgba(43, 155, 70, 0.1);
+}
+.md-typeset .example > .admonition-title::before,
+.md-typeset .example > summary::before {
+  background-color: rgb(43, 155, 70);
+}
