@@ -403,7 +403,7 @@
 <p>To insert a formula, click <strong>Formula Wizard</strong> from the <em>Analysis</em> tab.</p>
 <ol>
 <li>
-<p>Select the <strong>Environment</strong> from the drop-down list. All available environments in Web Client are listed. When set as <strong>Current Env.</strong>, it will update the formula to retrieve the data of the environment selected.</p>
+<p>Select the <strong>Environment</strong> from the drop-down list. All available environments in Web Client are listed. When set as <strong>Current Env.</strong>, the formula will be updated to retrieve data from the selected environment.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>When you switch environments from the title bar, the data will be updated automatically everywhere EXCEPT for formulas created in specific environments.  </p>
@@ -411,12 +411,38 @@
 </li>
 <li>
 <p>Select the <strong>Data Model</strong>, <strong>Field</strong> and <strong>Operator</strong> from their respective drop-down lists. You can also search the item by typing the name in the field for a quicker selection.</p>
-</li>
-<li>
-<p>Click <strong>Add Filter</strong> to add filters to the formula. Filters can be grouped using <strong>Add Group</strong> and can be set between an OR and AND. For formula examples, see <a href="https://onlinehelp.sageenterpriseintelligence.com/Latest/en/Web-Interface/Workbook/workbook-examples.htm">Workbook Formula Examples</a>.</p>
 <ul>
 <li>
-<p>Select the field, operator and value. The value can also be a referenced cell. You can use the prompt <a class="glightbox" href="assets/prompt.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="assets/prompt.png" /></a> to select the field.</p>
+<p>The <strong>Data Model</strong> is the data source that contains the field you wish to use in the formula. The data models are listed in alphabetical order.</p>
+</li>
+<li>
+<p>The <strong>Field</strong> is the field you wish to use in the formula. The fields are listed in alphabetical order.</p>
+</li>
+<li>
+<p>The <strong>Operator</strong> determines the type of aggregation that should be performed on the selected field. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Dynamic List operator creates a list that can be dynamically updated depending on the filters used.</p>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<p>Click <strong>Add Filter</strong> to add a filter to the formula. The 'Add Group' feature allows for grouping filters and transferring them to the newly created group by dragging the handle bar <a class="glightbox" href="assets/handlebar.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image" src="assets/handlebar.png" /></a>. Groups can be a part of other groups and configured between OR and AND. For formula examples, see <a href="https://onlinehelp.sageenterpriseintelligence.com/Latest/en/Web-Interface/Workbook/workbook-examples.htm">Workbook Formula Examples</a>.</p>
+<ul>
+<li>
+<p>Select the <em>filter</em> field, operator and value. </p>
+<ul>
+<li>
+<p>The <strong>Field</strong> is the field you wish to use in the filter. The fields are listed in alphabetical order.</p>
+</li>
+<li>
+<p>The <strong>Operator</strong> determines the type of operation that should be performed on the selected field.</p>
+</li>
+<li>
+<p>The <strong>Value</strong> can be hardcoded or can also be a referenced cell. You can use the prompt <a class="glightbox" href="assets/prompt.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="assets/prompt.png" /></a> to select the field.</p>
+</li>
+</ul>
 </li>
 <li>
 <p>If you wish to reference a cell, click the underscore in the Value field and select the cell. You can also enter the value in the cell.</p>
@@ -433,14 +459,14 @@
 </div>
 </li>
 <li>
-<p>You can click <strong>Preview Value</strong> to preview the formula result. If the formula is incorrect, a message will be displayed. When resolving the formula, a timeout happens when the querying reaches 300 seconds (5 minutes) or if the data results retrieved for the formula reaches 500,000.</p>
+<p>You can click <strong>Preview Value</strong> to preview the formula result. If the formula is incorrect, a message will be displayed. When resolving the formula, a timeout occurs when the query takes 300 seconds (5 minutes) or when the data results retrieved for the formula exceed 500,000 entries.</p>
 </li>
 <li>
 <p>Click <strong>Save</strong>.</p>
 <p><a class="glightbox" href="assets/formula-wizard.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="assets/formula-wizard.png" width="200px" /></a></p>
 </li>
 </ol>
-<p>The workbook generates a function that is visible in the formula bar. When clicking the formula bar, it displays a pop-up that shows the NECFORMULA function (similar to the NECACCESS function in the Excel Add-in).</p>
+<p>The Formula Wizard generates a function in the workbook that is visible in the formula bar. When clicking the formula bar, the NECFORMULA function (which is similar to the NECACCESS function in the Excel Add-in) appears in a pop-up window.</p>
 <p><a class="glightbox" href="assets/formula-wizard2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="assets/formula-wizard2.png" width="200px" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -448,7 +474,7 @@
 </div>
 </li>
 <li>
-<p>When using more than one NECFORMULA within a cell, the Formula Wizard gives the ability to give a name to each formula. { start=4 }</p>
+<p>When using more than one NECFORMULA within a cell, the Formula Wizard allows you to assign names to each formula. { start=4 }</p>
 <ol>
 <li>
 <p>Select a cell with multiple NECFORMULA, then click <strong>Formula Wizard</strong> from the Analysis tab.</p>
@@ -475,7 +501,7 @@
 <p>Select a variable from the Global Variable or Global Selection Page Parameters list.</p>
 </li>
 <li>
-<p>Click <strong>Save</strong>. That variable can then be used in a formula if its cell is referenced.</p>
+<p>Click <strong>Save</strong>. The variable can be used in a formula provided that its cell is referenced.</p>
 <p><a class="glightbox" href="assets/functions.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image" src="assets/functions.png" width="100px" /></a>
 <a class="glightbox" href="assets/functions-selection-page.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image" src="assets/functions-selection-page.png" width="100px" /></a></p>
 </li>
@@ -484,6 +510,10 @@
 <p class="admonition-title">Note</p>
 <p>Global variables use @@ in front of the parameter. Selection Pages use ## in front of the parameter. Reports can use both types of parameters (## and @@). To view a selection page example, click here.</p>
 </div>
+</li>
+<li>
+<p>All formulas referencing the cell will be recalculated if a reference cell is modified. </p>
+<p><a class="glightbox" href="assets/recalculated.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="image" src="assets/recalculated.png" width="200px" /></a></p>
 </li>
 <li>
 <p>When finished, click Save to keep the workbook changes.</p>
