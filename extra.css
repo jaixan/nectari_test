@@ -89,7 +89,7 @@
 }
 
 /* Modal Content/Box */
-@media (min-width: 1176px) {
+@media (min-width: 2000px) {
   .modal-content {
     position: relative;
     background-color: #fefefe;
