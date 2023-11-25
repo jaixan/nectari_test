@@ -144,5 +144,5 @@ a.button-style:hover {
 }
 
 .md-header {
-  top: 30px; /* This setting prevents the Material header from imposing into the space of the banner! */
+  top: 40px; /* This setting prevents the Material header from imposing into the space of the banner! */
 }
