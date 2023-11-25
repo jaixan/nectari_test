@@ -119,7 +119,7 @@
     width: 90%; /* Could be more or less, depending on screen size */
     background-color: #fefefe;
     top: -190px;
-    height: 95vh; /* Full height */
+    height: 90vh; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     margin: 5% auto; /* 15% from the top and centered */
     padding: 20px;
