@@ -89,7 +89,7 @@
 }
 
 /* Modal Content/Box */
-@media (min-width: 610px) {
+@media (min-width: 1176px) {
   .modal-content {
     position: relative;
     background-color: #fefefe;
@@ -105,7 +105,7 @@
 }
 
 /* Responsive design for smaller screens */
-@media (max-width: 600px) {
+@media (max-width: 1175px) {
   .modal {
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
